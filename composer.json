@@ -1,10 +1,11 @@
 {
-    "name": "Vuishnak/Vuishnak",
+    "name": "vuishnak/laravel-kaznachey",
     "type": "library",
     "description": "Laravel package for payment system Kaznachey",
     "keywords": [
         "Vuishnak",
-        "Vuishnak"
+        "Laravel",
+        "Kaznachey"
     ],
     "homepage": "https://github.com/Vuishnak/Vuishnak",
     "license": "MIT",
@@ -27,20 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-<<<<<<< HEAD
-            "Vuishnak\\Kaznachey\\": "src"
-=======
-            "Vuishnak\\Vuishnak\\": "src"
->>>>>>> 5ca26e3ebacddc62026d7b4bb8bbbcd86c21865e
+            "Vuishnak\\Kaznachey\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-<<<<<<< HEAD
-            "Vuishnak\\Kaznachey\\": "tests"
-=======
-            "Vuishnak\\Vuishnak\\": "tests"
->>>>>>> 5ca26e3ebacddc62026d7b4bb8bbbcd86c21865e
+            "Vuishnak\\Kaznachey\\": "tests/"
         }
     },
     "scripts": {
