@@ -27,12 +27,20 @@
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Vuishnak\\Kaznachey\\": "src"
+=======
+            "Vuishnak\\Vuishnak\\": "src"
+>>>>>>> 5ca26e3ebacddc62026d7b4bb8bbbcd86c21865e
         }
     },
     "autoload-dev": {
         "psr-4": {
+<<<<<<< HEAD
             "Vuishnak\\Kaznachey\\": "tests"
+=======
+            "Vuishnak\\Vuishnak\\": "tests"
+>>>>>>> 5ca26e3ebacddc62026d7b4bb8bbbcd86c21865e
         }
     },
     "scripts": {
