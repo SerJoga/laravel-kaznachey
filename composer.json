@@ -1,5 +1,5 @@
 {
-    "name": "SerJoga/laravel-kaznachey",
+    "name": "serjoga/laravel-kaznachey",
     "type": "library",
     "description": "Laravel package for payment system Kaznachey",
     "keywords": [
@@ -7,7 +7,7 @@
         "Laravel",
         "Kaznachey"
     ],
-    "homepage": "https://github.com/SerJoga",
+    "homepage": "https://github.com/serjoga",
     "license": "MIT",
     "authors": [
         {
