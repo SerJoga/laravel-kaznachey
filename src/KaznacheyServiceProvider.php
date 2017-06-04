@@ -3,6 +3,7 @@
 namespace SerJoga\Kaznachey;
 
 use Illuminate\Support\ServiceProvider;
+use SerJoga\Kaznachey\Api\Kaznachey;
 
 class KaznacheyServiceProvider extends ServiceProvider
 {
@@ -26,6 +27,8 @@ class KaznacheyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('kaznachey', 'SerJoga\Kaznachey\Api\Kaznachey');
+        $this->app->bind('kaznachey', function($app){
+            return new Kaznachey(config('kaznachey.merchant_secret_key'),config('kaznachey.merchant_guid'));
+        });
     }
 }
