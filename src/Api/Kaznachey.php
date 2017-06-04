@@ -11,8 +11,7 @@ class Kaznachey
 
     public function __construct($merchantSecretKey, $merchantGuid)
     {
-        $this->_merchantSecretKey = $merchantSecretKey;
-        $this->_merchantGuid = $merchantGuid;
+        $this->changeAccount($merchantSecretKey,$merchantGuid);
     }
 
     public function getMerchantInfo()
@@ -27,7 +26,12 @@ class Kaznachey
 
         $response = $this->sendRequest(json_encode($request), 'getMerchatInformation');
 
-        return json_decode($response, true);
+        return $response;
+    }
+    public function changeAccount($merchantSecretKey, $merchantGuid)
+    {
+        $this->_merchantSecretKey = $merchantSecretKey;
+        $this->_merchantGuid = $merchantGuid;
     }
 
     public function createPayment($request)
@@ -38,6 +42,15 @@ class Kaznachey
         }
 
         $request['MerchantGuid'] = $this->_merchantGuid;
+        if(!isset($request['Language'])){
+            $request['Language'] = strtoupper(\App::getLocale());
+        }
+        if(!isset($request['Currency'])){
+            $request['Currency'] = config('kaznachey.currency');
+        }
+        if(!isset($request['SelectedPaySystemId'])){
+            $request['SelectedPaySystemId'] = config('kaznachey.payment_system');
+        }
         //Формируем подпись.
         $signature = strtoupper($this->_merchantGuid) .
                 number_format($sum, 2, '.', '') . //Общая сумма. Внимание сумма должна быть в формать 123.23 Дробная часть отделяется точкой и не иметь лишних нулей!
@@ -53,7 +66,7 @@ class Kaznachey
 
         $response = $this->sendRequest(json_encode($request), 'CreatePaymentEx');
 
-        return json_decode($response, true);
+        return $response;
     }
 
     public function getStatusResponse()
@@ -75,7 +88,7 @@ class Kaznachey
         if($request['SignatureEx'] == $request_sign) {
             return $request;
         } else {
-            throw new Exception('Invalid signature! Request: ' . $request_json);
+            throw new \Exception('Invalid signature! Request: ' . $request_json);
         }
     }
 
@@ -95,6 +108,6 @@ class Kaznachey
         $response = curl_exec($curl);
         curl_close($curl);
 
-        return $response;
+        return json_decode($response);
     }
 }
