@@ -16,7 +16,7 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require SerJoga/laravel-kaznachey
+$ composer require serjoga/laravel-kaznachey
 ```
 
 ## Usage
@@ -46,24 +46,24 @@ If you discover any security related issues, please email serj.sedov@gmail.com i
 
 ## Credits
 
-- [SerJoga][link-author]
+- [serjoga][link-author]
 - [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/SerJoga/laravel-kaznachey.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/serjoga/laravel-kaznachey.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/SerJoga/laravel-kaznachey/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/SerJoga/laravel-kaznachey.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/SerJoga/laravel-kaznachey.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/SerJoga/laravel-kaznachey.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/serjoga/laravel-kaznachey/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/serjoga/laravel-kaznachey.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/serjoga/laravel-kaznachey.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/serjoga/laravel-kaznachey.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/SerJoga/laravel-kaznachey
-[link-travis]: https://travis-ci.org/SerJoga/laravel-kaznachey
-[link-scrutinizer]: https://scrutinizer-ci.com/g/SerJoga/laravel-kaznachey/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/SerJoga/laravel-kaznachey
-[link-downloads]: https://packagist.org/packages/SerJoga/laravel-kaznachey
-[link-author]: https://github.com/SerJoga
+[link-packagist]: https://packagist.org/packages/serjoga/laravel-kaznachey
+[link-travis]: https://travis-ci.org/serjoga/laravel-kaznachey
+[link-scrutinizer]: https://scrutinizer-ci.com/g/serjoga/laravel-kaznachey/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/serjoga/laravel-kaznachey
+[link-downloads]: https://packagist.org/packages/serjoga/laravel-kaznachey
+[link-author]: https://github.com/serjoga
 [link-contributors]: ../../contributors
