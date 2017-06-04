@@ -1,6 +1,6 @@
 <?php
 
-namespace Vuishnak\Kaznachey\Api;
+namespace SerJoga\Kaznachey\Api;
 
 class Kaznachey
 {

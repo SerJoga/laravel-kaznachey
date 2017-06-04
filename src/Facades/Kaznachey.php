@@ -1,6 +1,6 @@
 <?php
 
-namespace Vuishnak\Kaznachey\Facades;
+namespace SerJoga\Kaznachey\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

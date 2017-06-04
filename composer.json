@@ -1,19 +1,19 @@
 {
-    "name": "vuishnak/laravel-kaznachey",
+    "name": "SerJoga/laravel-kaznachey",
     "type": "library",
     "description": "Laravel package for payment system Kaznachey",
     "keywords": [
-        "Vuishnak",
+        "SerJoga",
         "Laravel",
         "Kaznachey"
     ],
-    "homepage": "https://github.com/Vuishnak/Vuishnak",
+    "homepage": "https://github.com/SerJoga",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vuishnak",
-            "email": "vuishnak@gmail.com",
-            "homepage": "http://roxcrume.com/",
+            "name": "Arhangelx",
+            "email": "serj.sedov@gmail.com",
+            "homepage": "http://netmaster.dp.ua/",
             "role": "Developer"
         }
     ],
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vuishnak\\Kaznachey\\": "src/"
+            "SerJoga\\Kaznachey\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vuishnak\\Kaznachey\\": "tests/"
+            "SerJoga\\Kaznachey\\": "tests/"
         }
     },
     "scripts": {

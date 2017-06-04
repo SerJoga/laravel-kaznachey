@@ -1,6 +1,6 @@
 <?php
 
-namespace Vuishnak\Kaznachey;
+namespace SerJoga\Kaznachey;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -26,6 +26,6 @@ class KaznacheyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('kaznachey', 'Vuishnak\Kaznachey\Api\Kaznachey');
+        $this->app->bind('kaznachey', 'SerJoga\Kaznachey\Api\Kaznachey');
     }
 }

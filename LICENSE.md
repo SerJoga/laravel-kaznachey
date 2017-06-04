@@ -1,10 +1,7 @@
 # The MIT License (MIT)
 
-<<<<<<< HEAD
-Copyright (c) 2016 :author_name <:author_email>
-=======
-Copyright (c) 2016 Vuishnak <vuishnak@gmail.com>
->>>>>>> 5ca26e3ebacddc62026d7b4bb8bbbcd86c21865e
+Copyright (c) 2017 Arhangelx <serj.sedov@gmail.com>
+
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
